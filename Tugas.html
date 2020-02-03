@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Toko Susilo</title>
+    <script defer src="./Tugas.js"></script>
+    <style>
+        table,th,td{
+            border: 1px solid black;
+            border-collapse: collapse;
+
+        }
+        table{
+            text-align: center;
+        }
+
+    </style>
+</head>
+<body>
+    <center>
+    <table>
+        <thead>
+            <th>Form Product</th><th>Form Hewan</th>
+        </thead>
+        <tbody>
+            <tr>
+                <td>
+                    <div>
+                        <form action="">
+                            <p>Nama <input type="text" id="name"></p>
+                            <p>Harga <input type="number" id="price"></p>
+                            <p>Kondisi
+                                <input type="radio" name="condition" id="new" value="New"> Baru
+                                <input type="radio" name="condition" id="second" value="Second"> Second
+
+                            </p>
+                            <p>Kategory
+                                <select id='category'>
+                                    <option value="elektronik">elektronik</option>
+                                    <option value="pakaian">pakaian</option>
+                                    <option value="otomotif">otomotif</option>
+
+                                </select>
+                            </p>
+                            <p>
+                            <input type="reset" value="Tambahkan" onclick="addNewProduct()">
+                            </p>
+
+                        </form>
+                    </div>
+                </td>
+                <td>
+                    <div>
+                        <form id="binatang">
+                            <p>Nama <input type="text" id="nameHewan"></p>
+                            <p>Harga <input type="number" id="priceHewan"></p>
+                            <p>Kelamin
+                                <input type="radio" name="kelamin" value="jantan"> Jantan
+                                <input type="radio" name="kelamin" value="bentina"> Bentina
+                            </p>
+                            <p> Status
+                                <input type="radio" name="status" value="liar">Liar
+                                <input type="radio" name="status" value="Peliharaan">Peliharaan
+
+                            </p>
+                            <p>
+                            <input type="reset" value="Tambahkan" onclick="addNewAnimal()">
+                            </p>
+
+                        </form>
+                    </div>
+                </td>
+            <tr>
+        </tbody>
+        <tfoot>
+
+        </tfoot>
+    </table>
+    <br>
+    <table>
+        <thead>
+            <tr>
+                <th>Data Manusia</th>
+                <th>Data Hewan</th>
+
+            </tr>
+        </thead>
+        <tr>
+            <td>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Nama</th>
+                            <th>Harga</th>
+                            <th>Kondisi</th>
+                            <th>Kategori</th>
+
+                        </tr>
+                    </thead>
+                    <tbody id='hasilProduct'>
+
+
+                    </tbody>
+                </table>
+            </td>
+            <td>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Nama</th>
+                            <th>Umur</th>
+                            <th>Kelamin</th>
+                            <th>Status</th>
+
+                        </tr>
+                    </thead>
+                    <tbody id='hasilAnimal'>
+
+
+                    </tbody>
+                </table>
+            </td>
+        </tr>
+    </table>
+</center>
+</body>
+</html>
